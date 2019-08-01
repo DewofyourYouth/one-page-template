@@ -1,0 +1,90 @@
+@import 'vars';
+
+
+/*
+    Header Styles
+*/
+
+header {
+    display: grid;
+    background-color: $header-grey;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    font-family: $roboto;
+    grid-template-areas: 
+        "logo contact contact"
+        "logo navbar navbar";
+}
+
+#logo-area {
+    grid-area: logo;
+    background-color: #fff;
+    -webkit-clip-path: polygon(91% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    padding: 30px  0 15px 90px;
+    img {
+        max-width: 60%;
+        padding: 15px 5px;
+    }
+}
+
+#header-contact-area {
+    grid-area: contact;
+    background-color: #fff;
+    padding-left: 100px;
+    margin-left: -20px;
+    padding-top: 15px;
+    height: 60px;
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%, 1.5% 100%, 0 0);
+
+    #telephone span {
+        font-weight: 700;
+    }
+    
+    .nav-link {
+        color: $black-link;
+        span, .social{
+            &:hover {
+                transition: color 0.5s ease;
+                color: $green-link;
+            }
+        }
+       
+        
+
+        .fas {
+            margin-right: 10px;
+        }
+    }
+}
+
+#navbar-area {
+    grid-area: navbar;
+    display: flexbox;
+    flex-direction: row;
+    font-weight: bolder;
+    .link {
+        padding: 10px 40px 10px 10px;
+        font-size: 18px;
+        line-height: 1.34;
+        font-weight: 500;
+        border-bottom: solid 5px transparent;
+        text-align: center;
+        &:hover{
+            border-bottom: solid 5px $green-link-border;
+            transition: border-bottom 1s ease;
+
+        }
+
+
+        a {
+            color: #151515;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+

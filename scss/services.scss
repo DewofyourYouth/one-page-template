@@ -1,0 +1,19 @@
+@import 'vars';
+
+
+#services {
+    padding-right: 120px;
+    padding-left: 120px;
+
+    h2 {
+        padding-bottom: 12px;
+    }
+}
+
+.icon {
+    display: block;
+    color: $green-link;
+    font-size: 3rem;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
