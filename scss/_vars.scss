@@ -12,7 +12,6 @@ $roboto: 'Roboto', s-apple-system,BlinkMacSystemFont,segoe ui,helvetica neue,Ari
 
 // Media Breakpoints
 
-$mobile-p: "only screen and (max-width : 575px)";
-$mobile-l: "only screen and (max-width : 767px)";
-$laptop: "only screen and (max-width : 1199px)";
-$desktop: "only screen and (max-width : 1679px)";
+$mobile: "only screen and (max-width : 1199px)";
+$laptop: "only screen and (min-width : 1200px)";
+$desktop: "only screen and (min-width : 1679px)";
