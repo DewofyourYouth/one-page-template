@@ -1,6 +1,18 @@
+// Colors
+
 $header-grey: #f5f5f5;
 $green-link: #00e39f;
 $green-link-border: #65E6B2;
 $black-link: #151515;
+
+// Fonts
+
 $roboto: 'Roboto', s-apple-system,BlinkMacSystemFont,segoe ui,helvetica neue,Arial,sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+// Media Breakpoints
+
+$mobile-p: "only screen and (max-width : 575px)";
+$mobile-l: "only screen and (max-width : 767px)";
+$laptop: "only screen and (max-width : 1199px)";
+$desktop: "only screen and (max-width : 1679px)";
