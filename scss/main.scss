@@ -1,13 +1,19 @@
 @import 'vars';
 @import 'header';
+@import 'carousel';
 @import 'services';
+@import 'payment';
 
-$blue: #00b0f0;
-// .container-fluid {
-//     padding: 0;
-// }
+.btn.btn-primary.btn-lg {
+    padding: 20px 60px;
+    border-radius: 0px;
+    font-family: $roboto;
+    font-weight: 700;
+    background: linear-gradient(to right, #007bff -10%, #00e39f 110%);
+    border: none;
 
-h2 {
-    color: $black-link;
+    &:hover {
+        background: linear-gradient(45deg, #007bff, #00e39f);
+    }
 }
 

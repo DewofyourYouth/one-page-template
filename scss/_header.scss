@@ -1,6 +1,3 @@
-@import 'vars';
-
-
 /*
     Header Styles
 */
@@ -15,6 +12,10 @@ header {
     grid-template-areas: 
         "logo contact contact"
         "logo navbar navbar";
+
+        #menus {
+            display: contents;
+        }
 }
 
 #logo-area {
@@ -28,6 +29,8 @@ header {
         padding: 15px 5px;
     }
 }
+
+
 
 #header-contact-area {
     grid-area: contact;
@@ -51,8 +54,6 @@ header {
             }
         }
        
-        
-
         .fas {
             margin-right: 10px;
         }
