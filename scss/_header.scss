@@ -3,6 +3,8 @@
 */
 
 header {
+    // default for mobile 
+
     display: flex;
     margin: auto;
     font-family: $roboto;
@@ -13,6 +15,7 @@ header {
         cursor: pointer;
     }
 
+    // don't show toggle if not mobile
     @media #{$laptop} {
         #collapse-menu {
             display: none;
@@ -20,11 +23,13 @@ header {
     }
 
     @media #{$mobile} {
+        // this overrides Bootstrap 4 default
         .nav {
             display: block;
         }
     }
 
+    // default toggle menu for mobile
     #menus {
         position: fixed;
         background-color: #fff;
@@ -35,6 +40,7 @@ header {
         display: none;
     }
 
+    // if laptop or wider screen, show header as grid
     @media #{$laptop} {
         display: grid;
         background-color: $header-grey;
