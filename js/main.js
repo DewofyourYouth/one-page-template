@@ -24,6 +24,18 @@ SOFTWARE.
 
 */
 
-$('#collapse-menu').click(function(){
-    $('#menus').toggle();
+$(document).ready(function(){
+    const menus = $( '#menus' );
+    const cm = $( '#collapse-menu' );
+    
+    if ($(window).width() < 1200) {
+        cm.click(function(){
+            menus.toggle("slow", "linear");
+       });
+       
+       $( 'a' ).click(function(){
+           menus.hide();
+       });
+    }
+    
 });

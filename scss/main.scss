@@ -38,8 +38,19 @@ SOFTWARE.
     background: linear-gradient(to right, #007bff -10%, #00e39f 110%);
     border: none;
 
+    @media #{$mobile} {
+        padding: 10px 20px;
+    }
+
     &:hover {
         background: linear-gradient(45deg, #007bff, #00e39f);
     }
 }
 
+@media #{$mobile} {
+    .container-fluid {
+        max-width: 100%;
+        min-width: 100%;
+        padding: 0;
+    }
+}

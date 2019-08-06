@@ -23,18 +23,33 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
-
-
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
-
-
 /*
     Header Styles
 */
+.header-tpad {
+  padding-top: 25px;
+}
+
 header {
   display: flex;
   margin: auto;
   font-family: "Roboto", s-apple-system, BlinkMacSystemFont, segoe ui, helvetica neue, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 1199px) {
+  header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 2;
+  }
+  header #navbar-area {
+    overflow-y: scroll;
+  }
+  header .nav {
+    display: block;
+  }
 }
 
 header #collapse-menu {
@@ -49,20 +64,22 @@ header #collapse-menu {
   }
 }
 
-@media only screen and (max-width: 1199px) {
-  header .nav {
-    display: block;
-  }
-}
-
 header #menus {
   position: fixed;
   background-color: #fff;
-  z-index: 100;
+  z-index: -1;
   height: 100%;
-  top: 63px;
+  top: 60px;
   text-align: left;
   display: none;
+  overflow-y: scroll;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+header .block-transition {
+  display: block;
+  transition-delay: 1s;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -135,11 +152,23 @@ header #menus {
   }
 }
 
+@media only screen and (min-width: 1200px) and (min-width: 1439px) {
+  #header-contact-area {
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%, 2% 100%, 0 0);
+  }
+}
+
 #navbar-area {
   grid-area: navbar;
   display: flexbox;
   flex-direction: row;
   font-weight: bolder;
+}
+
+@media only screen and (min-width: 1439px) {
+  #navbar-area {
+    padding-left: 3rem;
+  }
 }
 
 #navbar-area .link {
@@ -173,11 +202,36 @@ header #menus {
 /*
     Carousel Styles
 */
+.card {
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .card {
+    min-height: 500px;
+  }
+  .card .card-img {
+    border-radius: default;
+    min-height: 530px;
+    object-fit: cover;
+  }
+}
+
+.carousel {
+  min-width: 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+  .display-4 {
+    font-size: 1.5rem;
+  }
+}
+
 .card-img-overlay {
-  margin-left: 250px;
-  padding-top: 100px;
+  margin: auto;
   width: 60%;
   font-family: "Roboto", s-apple-system, BlinkMacSystemFont, segoe ui, helvetica neue, Arial, sans-serif;
+  display: table;
 }
 
 .card-title {
@@ -226,6 +280,20 @@ header #menus {
   border: none;
 }
 
+@media only screen and (max-width: 1199px) {
+  .btn.btn-primary.btn-lg {
+    padding: 10px 20px;
+  }
+}
+
 .btn.btn-primary.btn-lg:hover {
   background: linear-gradient(45deg, #007bff, #00e39f);
+}
+
+@media only screen and (max-width: 1199px) {
+  .container-fluid {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+  }
 }

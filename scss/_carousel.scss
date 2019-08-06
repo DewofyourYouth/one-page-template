@@ -2,11 +2,46 @@
 /*
     Carousel Styles
 */
+.card {
+    border-radius: 0;
+
+    @media #{$mobile} {
+        min-height: 500px;
+        
+    
+
+        .card-img {
+            border-radius: default;
+            min-height: 530px;
+            object-fit: cover;
+          }
+
+    }
+}
+
+.carousel {
+    min-width: 100%;
+}
+
+@media #{$mobile} {
+    // .carousel {
+    //      margin-top: 80px;
+    // }
+
+    .display-4 {
+        font-size: 1.5rem;
+    }
+       
+}
+
+    
+
+
 .card-img-overlay {
-    margin-left: 250px;
-    padding-top: 100px;
+    margin: auto;
     width: 60%;
     font-family: $roboto;
+    display: table;
 }
 
 .card-title {
