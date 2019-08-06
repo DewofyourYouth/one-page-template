@@ -1,5 +1,5 @@
 {
-  "name": "sheboygan",
+  "name": "one-page-template",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -18,7 +18,7 @@
     "scss": "node-sass --output-style expanded scss -o css",
     "watch-css": "nodemon -e scss -x \"npm run scss\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jacob Shore",
+  "license": "MIT",
   "description": ""
 }
