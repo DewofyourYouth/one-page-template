@@ -24,18 +24,16 @@ SOFTWARE.
 
 */
 
-$(document).ready(function(){
-    const menus = $( '#menus' );
-    const cm = $( '#collapse-menu' );
+const menus = $( '#menus' );
+const cm = $( '#collapse-menu' );
+
+if ($(window).width() < 1200) {
+    cm.click(function(){
+        menus.toggle("slow", "linear");
+    });
     
-    if ($(window).width() < 1200) {
-        cm.click(function(){
-            menus.toggle("slow", "linear");
-       });
-       
-       $( 'a' ).click(function(){
-           menus.hide();
-       });
-    }
+    $( 'a' ).click(function(){
+        menus.hide();
+    });
+}
     
-});

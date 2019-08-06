@@ -3,7 +3,7 @@
     border-radius: 0px;
     font-family: $roboto;
     font-weight: 700;
-    background: linear-gradient(to right, #007bff -10%, #00e39f 110%);
+    background: linear-gradient(to right, $blue-highlight -10%, $green-link 110%);
     border: none;
 
     @media #{$mobile} {
@@ -11,17 +11,18 @@
     }
 
     &:hover {
-        background: linear-gradient(45deg, #007bff, #00e39f);
+        background: linear-gradient(45deg, $blue-highlight, $green-link);
     }
 }
 
 .cta-gradient {
     display: inline-block;
     vertical-align: middle;
-    width: 40px;
+    width: 50px;
     height: 3px;
+    margin-top: -5px;
     margin-right: 15px;
-    background: linear-gradient(to right, #359fd6, #00e39f);
+    background: linear-gradient(to right, $blue-highlight -10%, $green-link);
 }
 
 .col-12 {

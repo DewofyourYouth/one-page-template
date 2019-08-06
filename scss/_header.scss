@@ -168,7 +168,7 @@ header {
         border-bottom: solid 5px transparent;
         text-align: center;
         &:hover{
-            border-bottom: solid 5px $green-link-border;
+            border-bottom: solid 5px $green-link;
             transition: border-bottom 1s ease;
 
         }
