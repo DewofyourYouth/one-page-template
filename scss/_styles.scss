@@ -1,0 +1,21 @@
+.btn.btn-primary.btn-lg {
+    padding: 20px 60px;
+    border-radius: 0px;
+    font-family: $roboto;
+    font-weight: 700;
+    background: linear-gradient(to right, #007bff -10%, #00e39f 110%);
+    border: none;
+
+    @media #{$mobile} {
+        padding: 10px 20px;
+    }
+
+    &:hover {
+        background: linear-gradient(45deg, #007bff, #00e39f);
+    }
+}
+
+.col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

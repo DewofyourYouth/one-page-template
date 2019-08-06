@@ -67,7 +67,7 @@ header {
     // if laptop or wider screen, show header as grid
     @media #{$laptop} {
         display: grid;
-        background-color: $header-grey;
+        background-color: $bg-grey;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         margin: 0;
@@ -121,14 +121,14 @@ header {
         margin-left: -20px;
         padding-top: 15px;
         height: 60px;
-        clip-path: polygon(100% 0, 100% 100%, 20% 100%, 1.5% 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 100%, 20% 100%, 2% 100%, 0 0);
         
         #telephone span {
             font-weight: 700;
         }
         
         .nav-link {
-            color: $black-link;
+            color: $text-black;
             span, .social{
                 &:hover {
                     transition: color 0.5s ease;
@@ -141,9 +141,7 @@ header {
             }
     }
     
-    @media #{$laptop-plus}{
-        clip-path: polygon(100% 0, 100% 100%, 20% 100%, 2% 100%, 0 0);
-    }
+
    
     }
 }

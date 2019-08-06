@@ -7,8 +7,6 @@
 
     @media #{$mobile} {
         min-height: 500px;
-        
-    
 
         .card-img {
             border-radius: default;
@@ -42,6 +40,12 @@
     width: 60%;
     font-family: $roboto;
     display: table;
+    @media #{$laptop} {
+        * {
+            padding-bottom: 10px;
+        }
+    }
+ 
 }
 
 .card-title {

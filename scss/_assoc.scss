@@ -1,0 +1,31 @@
+#associations {
+    background-color: $bg-grey; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .row{
+        margin-right: -15px !important;
+        margin-left: -15px !important; 
+
+        .col-12 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+    
+}
+
+.assoc-logo {
+    padding: 40px 30px;
+
+    img {
+        max-width: 100%;
+        filter: opacity(60%) grayscale(100%); 
+        visibility: visible; 
+        opacity: 1; 
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    
+
+}
+
