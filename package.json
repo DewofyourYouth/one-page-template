@@ -11,11 +11,13 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.10.0",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "nodemon": "^1.19.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --output-style expanded --watch scss -o css"
+    "scss": "node-sass --output-style expanded scss -o css",
+    "watch-css": "nodemon -e scss -x \"npm run scss\""
   },
   "author": "",
   "license": "ISC",

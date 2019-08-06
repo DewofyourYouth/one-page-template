@@ -15,6 +15,14 @@
     }
 }
 
+.cta-gradient {
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    margin-right: 15px;
+    background: linear-gradient(to right, #359fd6, #00e39f);
+}
+
 .col-12 {
     padding-left: 0 !important;
     padding-right: 0 !important;
