@@ -23,17 +23,43 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 */
+$(document).ready(function(){
+    const menus = $( '#menus' );
+    const cm = $( '#collapse-menu' );
 
-const menus = $( '#menus' );
-const cm = $( '#collapse-menu' );
+    if ($(window).width() < 1200) {
+        cm.click(function(){
+            menus.toggle("slow", "linear");
+        });
+        
+        $( 'a' ).click(function(){
+            menus.hide();
+        });
+    }
 
-if ($(window).width() < 1200) {
-    cm.click(function(){
-        menus.toggle("slow", "linear");
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        // autoplayHoverPause: true,
+        margin: 10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            900:{
+                items:3,
+                nav: true,
+                loop:true
+            }
+        },
+        navigation: true,
+        navText: [
+            "◀️",
+            "▶️"
+        ],
     });
-    
-    $( 'a' ).click(function(){
-        menus.hide();
-    });
-}
-    
+
+  });

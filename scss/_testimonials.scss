@@ -1,0 +1,68 @@
+/*
+    Testimonials Styles
+*/
+
+.owl-item {
+    color: lighten($text-grey, 20%);
+    margin-top: 20px;
+    transition-delay: font-size 500ms;
+    
+    blockquote {
+        padding-top: 30px;
+        font-size: 1rem;
+    }
+
+    .card {
+        @media #{$mobile} {
+            min-height: 200px;
+        }
+    }
+}
+
+
+
+.owl-item.active.center {
+    color: $text-grey;
+    height: 420px;
+    margin-top: 0;
+    transition-delay: color 500ms;
+    
+    blockquote {
+        font-size: 1.2rem;
+    }
+    .card-shadow {
+        height: 200px;
+        box-shadow: 1px 1px 5px 5px rgba(0, 9, 9, 0.3);
+    }
+    .testi-caption {
+        opacity: 1;
+        h4 {
+            color: $text-black;
+           
+        }
+       
+    }
+    
+}
+
+.card-shadow {
+    box-shadow: 1px 1px 5px 5px rgba(0, 9, 9, 0.1);
+    border-radius: 5px;
+    border: none;
+    height: 200px;
+}
+
+.testi-caption {
+    opacity: .5;
+    h4 {
+        margin-top: 20px;
+        color: lighten($text-grey, 10%);
+    }
+    h5 {
+        color: $green-link; 
+    }
+}
+
+.owl-nav {
+    font-size: 36px;
+}

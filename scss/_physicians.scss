@@ -1,0 +1,46 @@
+/*
+    Physicians Headers
+*/
+#physicians {
+    padding: 50px 0;
+}
+
+#doc-pics {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    padding: 0 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.doc-pic {
+    position: relative;
+    margin: 0 20px;
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, .5));
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+
+        .text {
+            padding-top: 140px;
+            color: #fff;
+        }
+    }
+
+    &:hover {
+        .overlay {
+            height: 100%;
+        }
+    }
+}
+
+

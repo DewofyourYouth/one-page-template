@@ -1,0 +1,16 @@
+/*
+    Research Styles
+*/
+
+#research{
+    @extend #payments;
+    background: linear-gradient(to right,
+    #383838bb 0%, 
+    #383838bb 100%), 
+    url(./media/dna.jpg)  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 430px;
+}

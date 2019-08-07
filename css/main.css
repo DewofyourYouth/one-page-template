@@ -299,14 +299,13 @@ header .block-transition {
 /*
     Payment Section Styles
 */
-#payments {
+#payments, #research {
   font-family: "Roboto", s-apple-system, BlinkMacSystemFont, segoe ui, helvetica neue, Arial, sans-serif;
-  background: linear-gradient(to right, #4d505244, #383838bb 35%, #000000d7 50%), url(./media/nightlife.jpeg) no-repeat center center fixed;
+  background: linear-gradient(to right, #383838bb 35%, #000000d7 50%), url(./media/nightlife.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 500px;
 }
 
 /*
@@ -329,7 +328,7 @@ header .block-transition {
 }
 
 .assoc-logo {
-  padding: 40px 30px;
+  padding: 90px 30px;
 }
 
 .assoc-logo img {
@@ -338,4 +337,127 @@ header .block-transition {
   visibility: visible;
   opacity: 1;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+/*
+    Testimonials Styles
+*/
+.owl-item {
+  color: #aaaaaa;
+  margin-top: 20px;
+  transition-delay: font-size 500ms;
+}
+
+.owl-item blockquote {
+  padding-top: 30px;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .owl-item .card {
+    min-height: 200px;
+  }
+}
+
+.owl-item.active.center {
+  color: #777777;
+  height: 420px;
+  margin-top: 0;
+  transition-delay: color 500ms;
+}
+
+.owl-item.active.center blockquote {
+  font-size: 1.2rem;
+}
+
+.owl-item.active.center .card-shadow {
+  height: 200px;
+  box-shadow: 1px 1px 5px 5px rgba(0, 9, 9, 0.3);
+}
+
+.owl-item.active.center .testi-caption {
+  opacity: 1;
+}
+
+.owl-item.active.center .testi-caption h4 {
+  color: #151515;
+}
+
+.card-shadow {
+  box-shadow: 1px 1px 5px 5px rgba(0, 9, 9, 0.1);
+  border-radius: 5px;
+  border: none;
+  height: 200px;
+}
+
+.testi-caption {
+  opacity: .5;
+}
+
+.testi-caption h4 {
+  margin-top: 20px;
+  color: #919191;
+}
+
+.testi-caption h5 {
+  color: #00e39f;
+}
+
+.owl-nav {
+  font-size: 36px;
+}
+
+/*
+    Research Styles
+*/
+#research {
+  background: linear-gradient(to right, #383838bb 0%, #383838bb 100%), url(./media/dna.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 430px;
+}
+
+/*
+    Physicians Headers
+*/
+#physicians {
+  padding: 50px 0;
+}
+
+#doc-pics {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  padding: 0 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.doc-pic {
+  position: relative;
+  margin: 0 20px;
+}
+
+.doc-pic .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.doc-pic .overlay .text {
+  padding-top: 140px;
+  color: #fff;
+}
+
+.doc-pic:hover .overlay {
+  height: 100%;
 }
