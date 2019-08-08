@@ -508,7 +508,7 @@ footer {
 */
 .footer-classic {
   text-align: center;
-  background: #343c49 url(../images/bg-footer.jpg) 50% 50% no-repeat;
+  background: #343c49;
   background-size: cover;
 }
 
