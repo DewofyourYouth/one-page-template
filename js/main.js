@@ -75,12 +75,14 @@ $(document).ready(function(){
 
   });
  
-    // this offsets the link for fixed nav-bar
+    // this offsets the link for fixed nav-bar header
 
     $('.link').click(function(e){
-        let target = e.target.hash;
-        let divCoords = $(target).offset();
+        let divCoords = $(e.target.hash).offset();
         let height = $('header').height();
+        if(window.scrollY < 50) {
+            height = height * 1.5;
+        }
         e.preventDefault();
         window.scrollTo({
             left: divCoords.left, 
