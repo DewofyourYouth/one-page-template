@@ -2,7 +2,5 @@
 
 To dos:
 
-- 'fixed' header on desktop
 - add social media links to header
-- edits on footer
   
