@@ -23,6 +23,10 @@ Copyright (c) 2019 Jacob Shore
   background: linear-gradient(45deg, #007bff, #00e39f);
 }
 
+.form-button > .btn.btn-primary.btn-lg {
+  padding: 10px 20px;
+}
+
 .cta-gradient {
   display: inline-block;
   vertical-align: middle;

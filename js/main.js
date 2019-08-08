@@ -3,6 +3,7 @@
 Copyright (c) 2019 Jacob Shore
 
 */
+
 $(document).ready(function(){
     const menus = $( '#menus' );
     const cm = $( '#collapse-menu' );
