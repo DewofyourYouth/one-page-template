@@ -215,6 +215,10 @@ header .block-transition {
   text-decoration: none;
 }
 
+.logo-scrolled {
+  padding: 0 0 0 90px !important;
+}
+
 /*
     Carousel Styles
 */
@@ -413,7 +417,7 @@ header .block-transition {
 #doc-pics {
   width: 100%;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   padding: 0 50px;
   text-align: center;
   align-items: center;
