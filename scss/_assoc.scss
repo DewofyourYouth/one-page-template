@@ -22,6 +22,10 @@
 .assoc-logo {
     padding: 90px 30px;
 
+    @media #{$mobile} {
+        padding: 30px;
+    }
+
     img {
         max-width: 100%;
         filter: opacity(60%) grayscale(100%); 
