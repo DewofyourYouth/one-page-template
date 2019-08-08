@@ -1,3 +1,7 @@
+%no-mb {
+    margin-bottom: 0;
+}
+
 .btn.btn-primary.btn-lg {
     padding: 20px 60px;
     border-radius: 0px;
@@ -36,4 +40,16 @@
 
 h1 {
     text-transform: uppercase;
+}
+
+.form-group {
+    @extend %no-mb;
+}
+
+label {
+    @extend %no-mb;
+}
+
+button {
+    margin-top: 20px !important;
 }

@@ -70,8 +70,6 @@ $(document).ready(function(){
  
 
   });
-  
-if ($(window).width() > 1000) {
  
     // this offsets the link for fixed nav-bar
 
@@ -81,5 +79,3 @@ if ($(window).width() > 1000) {
         e.preventDefault();
         window.scrollTo(divCoords.left, divCoords.top - 50);
     });
-
-}

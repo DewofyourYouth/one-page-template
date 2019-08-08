@@ -8,16 +8,21 @@
 #doc-pics {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    padding: 0 50px;
+    flex-flow: row;
+    padding: 0px 50px;
     text-align: center;
     align-items: center;
     justify-content: center;
+
+    @media #{$mobile} {
+        flex-flow: row wrap;
+    }
 }
 
 .doc-pic {
     position: relative;
-    margin: 0 20px;
+    margin: 10px 20px;
+    
 
     .overlay {
         position: absolute;

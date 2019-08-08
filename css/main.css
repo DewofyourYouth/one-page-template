@@ -4,6 +4,10 @@ Copyright (c) 2019 Jacob Shore
 
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+.form-group, label {
+  margin-bottom: 0;
+}
+
 .btn.btn-primary.btn-lg {
   padding: 20px 60px;
   border-radius: 0px;
@@ -46,6 +50,10 @@ h1 {
   text-transform: uppercase;
 }
 
+button {
+  margin-top: 20px !important;
+}
+
 /*
     Header Styles
 */
@@ -80,7 +88,7 @@ header #collapse-menu {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   header #collapse-menu {
     display: none;
   }
@@ -104,7 +112,7 @@ header .block-transition {
   transition-delay: 1s;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   header {
     display: grid;
     background-color: #f1f1f1;
@@ -133,7 +141,7 @@ header .block-transition {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   #logo-area {
     grid-area: logo;
     -webkit-clip-path: polygon(91% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
@@ -151,7 +159,7 @@ header .block-transition {
   background-color: #fff;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   #header-contact-area {
     padding-left: 100px;
     margin-left: -20px;
@@ -254,7 +262,7 @@ header .block-transition {
   display: table;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
   .card-img-overlay * {
     padding-bottom: 10px;
   }
@@ -417,16 +425,22 @@ header .block-transition {
 #doc-pics {
   width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  padding: 0 50px;
+  flex-flow: row;
+  padding: 0px 50px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
+@media only screen and (max-width: 1199px) {
+  #doc-pics {
+    flex-flow: row wrap;
+  }
+}
+
 .doc-pic {
   position: relative;
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 
 .doc-pic .overlay {
