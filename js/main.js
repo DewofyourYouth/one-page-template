@@ -80,10 +80,11 @@ $(document).ready(function(){
     $('.link').click(function(e){
         let target = e.target.hash;
         let divCoords = $(target).offset();
+        let height = $('header').height();
         e.preventDefault();
         window.scrollTo({
             left: divCoords.left, 
-            top: divCoords.top - 80,
+            top: divCoords.top - height,
             behavior: 'smooth'
         });
     });
