@@ -7,4 +7,3 @@ To dos:
 ## Demo Page
 
 Here is the [demo page](https://dewofyouryouth.github.io/one-page-template/)  
-  
