@@ -80,13 +80,19 @@ $(document).ready(function(){
     $('.link').click(function(e){
         let divCoords = $(e.target.hash).offset();
         let height = $('header').height();
-        if(window.scrollY < 50) {
-            height = height * 1.5;
-        }
         e.preventDefault();
         window.scrollTo({
             left: divCoords.left, 
             top: divCoords.top - height,
+            behavior: 'smooth'
+        });
+    });
+
+    $('#logo-area').click(function(e){
+        e.preventDefault();
+        window.scrollTo({
+            left: 0,
+            top: 0,
             behavior: 'smooth'
         });
     });
