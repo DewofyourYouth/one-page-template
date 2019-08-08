@@ -77,5 +77,9 @@ $(document).ready(function(){
         let target = e.target.hash;
         let divCoords = $(target).offset();
         e.preventDefault();
-        window.scrollTo(divCoords.left, divCoords.top - 80);
+        window.scrollTo({
+            left: divCoords.left, 
+            top: divCoords.top - 80,
+            behavior: 'smooth'
+        });
     });
