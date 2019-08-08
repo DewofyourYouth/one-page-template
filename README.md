@@ -3,4 +3,7 @@
 To dos:
 
 - add social media links to header
-  
+
+## Demo Page
+
+Here is the [demo page](https://dewofyouryouth.github.io/one-page-template/)  
