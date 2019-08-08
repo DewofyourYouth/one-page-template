@@ -9,26 +9,30 @@ Copyright (c) 2019 Jacob Shore
 $(document).ready(function(){
     const menus = $( '#menus' );
     const cm = $( '#collapse-menu' );
-    const header = $('header');
+    const contact =  $( '#header-contact-area' );
+    const logo = $( '#logo-area' );
+    const win = $( window );
+    const header = $( 'header' );
+    const winWidth = win.width();
 
     // On laptops and desktops, make nav fixed on scrolling
-    if ($(window).width() > 1000) {
-        $(window).scroll(function(){
+    if (winWidth > 1000) {
+        win.scroll(function(){
             if(window.scrollY > 50) {
                 header.addClass('fixed-top');
-                $('#header-contact-area').hide();
-                $('#logo-area').addClass('logo-scrolled', 1000);
+                contact.hide();
+                logo.addClass('logo-scrolled', 1000);
             } else {
                 header.removeClass('fixed-top');
-                $('#header-contact-area').show();
-                $('#logo-area').removeClass('logo-scrolled', 1000);
+                contact.show();
+                logo.removeClass('logo-scrolled', 1000);
             }
         });
     }
 
     // Nav handling for mobile
 
-    if ($(window).width() < 1200) { 
+    if (winWidth < 1200) { 
         cm.click(function(){
             menus.toggle("slow", "linear"); // toggle the nav when clicking the collapse menu button
         });
