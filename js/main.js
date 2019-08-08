@@ -88,6 +88,8 @@ $(document).ready(function(){
         });
     });
 
+    // smooth scrolling to top when click on logo
+
     $('#logo-area').click(function(e){
         e.preventDefault();
         window.scrollTo({
