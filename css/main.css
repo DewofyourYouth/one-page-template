@@ -327,6 +327,12 @@ header .block-transition {
   padding: 90px 30px;
 }
 
+@media only screen and (max-width: 1199px) {
+  .assoc-logo {
+    padding: 30px;
+  }
+}
+
 .assoc-logo img {
   max-width: 100%;
   filter: opacity(60%) grayscale(100%);
