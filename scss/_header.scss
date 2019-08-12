@@ -99,7 +99,7 @@ header {
 
     @media #{$laptop}{
         grid-area: logo;
-        -webkit-clip-path: polygon(91% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+        -webkit-clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
         clip-path: polygon(93% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
         padding: 30px  0 15px 90px;
 
@@ -121,6 +121,7 @@ header {
         margin-left: -20px;
         padding-top: 15px;
         height: 60px;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 20% 100%, 2% 100%, 0 0);
         clip-path: polygon(100% 0, 100% 100%, 20% 100%, 2% 100%, 0 0);
         
         #telephone span {
